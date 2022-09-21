@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/api", indexRoutes);
+app.use( indexRoutes);
 app.use("/api", devocionalesRoutes);
 
 app.use((req, res, next) => {
